@@ -1,0 +1,35 @@
+<ion-view view-title="اخبار دانشگاه">
+  <ion-content  ng-controller="FeedControllerUniversity">
+      <div class="item item-input item-floating-label " >
+          <label class="item-input clear-bg">
+              <i style="text-align: center"class="icon ion-ios-search placeholder-icon"></i>
+              <input style="text-align: center" type="search" placeholder="جستجو" ng-model="query" >
+          </label>
+
+
+
+      </div>
+      <div class="list card animated fadeInDown" ng-repeat="row in data | filter:query" >
+
+          <div class="item item-body item-thumbnail-left" style="background-color: darkseagreen">
+              <img src="{{row['img']}}" height="100%" width="100%" class="animated fadeInRightBig" style="box-shadow: 5px 5px 5px #888888">
+              <h2 style="text-align: right" dir="rtl">
+                  {{row['main']['text']}}
+              </h2>
+              <p>{{row['date']}}</p>
+          </div>
+
+          <div class=" item tabs tabs-secondary tabs-icon-left animated fadeInUpBig" style="background-color: darkslategrey ;color: #ffffff">
+
+              <a class="tab-item"  ng-href="{{row['main']['href']}}" onclick='window.open(this.href, "_system", "location=yes"); return false;'>
+                  <i class="icon ion-link"></i>
+
+              </a>
+
+
+          </div>
+
+      </div>
+      <img src="img/bl.png" height="150px">
+  </ion-content>
+</ion-view>

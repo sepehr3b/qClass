@@ -1,0 +1,122 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu-content>
+    <ion-nav-bar align-title="center" class="assertive-bg ">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button  ng-controller="PopupCtrl"  class="button button-icon button-clear icon ion-help-circled" ng-click="showAlert()">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+          <button class="button button-balanced button-fab " menu-toggle="right">
+            <i class="icon ion-navicon"></i>
+          </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent">
+
+    </ion-nav-view>
+    <button style="margin-bottom: 60px" ng-controller="UpCtrl"  class="button button-calm-100 button-fab button-fab-bottom-left animated fadeInUpBig" ng-click="scrollTop(scrollTop([]))">
+      <i class="icon ion-chevron-up assertive"></i>
+    </button>
+    <button ng-controller="UpCtrl"  class="button button-calm-100 button-fab button-fab-bottom-left animated fadeInUpBig" ng-click="scrollBo()">
+      <i class="icon ion-chevron-down assertive"></i>
+    </button>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right" class=" clear-bg">
+
+
+      <ion-header-bar expose-aside-when="large" class="expanded clear-bg" style="background-image: url('img/pat1.png'); background-size: cover" >
+
+        <img  src="img/q.png" class="avatar motion spin fade">
+        <div  class="menu-bottom darker clear-bg " >
+          <h2 class="" >qiau.ac.ir</strong></h2>
+        </div>
+      </ion-header-bar>
+
+
+    <ion-content class=" has-expanded-header assertive-bg ">
+      <ion-list>
+
+
+        <div class="row">
+
+          <a class="col col-100" s menu-close href="#/app/etela" style="text-decoration: none">
+            <img src="img/not.png" height="100%" width="100%"  style="max-height: 100px">
+            <p  style="color: #ffffff"  dir="rtl">اطلاعیه ها</p>
+          </a>
+
+        </div>
+
+        <div class="row">
+
+          <a class="col"  menu-close href="#/app/university" style="text-decoration: none">
+            <img src="img/avatar/uni.jpg" height="100%" width="100%" style="max-height: 100px">
+            <p style="color: #ffffff" dir="rtl">اخبار دانشگاه</p>
+          </a>
+
+          <a class="col"  menu-close href="#/app/oloumt" style="text-decoration: none">
+            <img src="img/avatar/oloum.jpg" height="100%" width="100%" style="max-height: 100px">
+            <p style="color: #ffffff" dir="rtl">علوم و تحقیقات</p>
+          </a>
+
+        </div>
+
+        <div class="row">
+
+          <a class="col"  menu-close href="#/app/mng" style="text-decoration: none">
+            <img src="img/avatar/mng.jpg" height="100%" width="100%" style="max-height: 100px">
+            <p style="color: #ffffff" dir="rtl">دانشکده مدیریت و حسابداری</p>
+          </a>
+
+          <a class="col"  menu-close href="#/app/ind" style="text-decoration: none">
+            <img src="img/avatar/ind.jpg" height="100%" width="100%" style="max-height: 100px">
+            <p style="color: #ffffff" dir="rtl">دانشکده صنایع و مکانیک</p>
+          </a>
+
+        </div>
+
+        <div class="row">
+
+          <a class="col col-100"   menu-close href="#/app/com" style="text-decoration: none">
+            <img src="img/avatar/com.jpg" height="100%" width="100%" style="max-height: 200px">
+            <p style="color: #ffffff" dir="rtl">دانشکده برق و رایانه</p>
+          </a>
+
+        </div>
+
+        <div class="row">
+
+          <a class="col"  menu-close href="#/app/cvl" style="text-decoration: none">
+            <img src="img/avatar/cvl.jpg" height="100%" width="100%" style="max-height: 100px">
+            <p style="color: #ffffff" dir="rtl">دانشکده عمران و نقشه برداری</p>
+          </a>
+
+          <a class="col"  menu-close href="#/app/arc" style="text-decoration: none">
+            <img src="img/avatar/arc.jpg" height="100%" width="100%" style="max-height: 100px">
+            <p style="color: #ffffff" dir="rtl">دانشکده معماری و شهرسازی</p>
+
+          </a>
+        </div>
+
+        <div class="row">
+
+          <a class="col"  menu-close href="#/app/fani" style="text-decoration: none">
+            <img src="img/avatar/fani.jpg" height="100%" width="100%" style="max-height: 100px">
+            <p style="color: #ffffff" dir="rtl">دانشکده فنی و حرفه ای</p>
+          </a>
+
+          <a class="col" menu-close href="#/app/about" style="text-decoration: none" >
+            <img src="img/about.png" height="100%" width="100%" style="max-height: 100px">
+            <p style="color: #ffffff" dir="rtl">درباره ی ما</p>
+          </a>
+
+        </div>
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
+

@@ -1,0 +1,22 @@
+/* Empty. Add your own CSS if you like */
+.module {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.ht {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 4px 8px;
+    color: white;
+    margin: 0;
+    font: 14px Sans-Serif;
+}
+

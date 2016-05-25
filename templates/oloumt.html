@@ -1,0 +1,30 @@
+<ion-view view-title="علوم و تحقیقات">
+    <ion-content  ng-controller="FeedControllerOloum">
+        <div class="item item-input item-floating-label " >
+            <label class="item-input clear-bg" >
+                <i style="text-align: center"class="icon ion-ios-search placeholder-icon"></i>
+                <input style="text-align: center" type="search" placeholder="جستجو" ng-model="query" >
+            </label>
+
+
+        </div>
+        <div class="list card animated fadeInDown" ng-repeat="olm_post in olm_posts| filter:query" >
+
+            <div class="item item-body" style="background-color: darkseagreen">
+                <p style="text-align: right" dir="rtl">
+                    {{olm_post.title}}
+                </p>
+            </div>
+
+            <div class=" item tabs tabs-secondary tabs-icon-left animated fadeInUpBig" style="background-color: darkslategrey ;color: #ffffff">
+
+                <a class="tab-item"  ng-href="{{mng_post.link}}" onclick='window.open(this.href, "_system", "location=yes"); return false;'>
+                    <i class="icon ion-link"></i>
+
+                </a>
+
+            </div>
+        </div>
+        <img src="img/bl.png" height="150px">
+    </ion-content>
+</ion-view>
